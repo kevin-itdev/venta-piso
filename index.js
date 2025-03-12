@@ -1,5 +1,5 @@
         const images = [];
-        for (let i = 1; i <= 49; i++) {
+        for (let i = 1; i <= 53; i++) {
             images.push(`../images/Photo${i}.jpeg`);
         }
         const pictures = document.getElementById("myPictures");
