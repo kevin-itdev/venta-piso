@@ -1,6 +1,6 @@
         const images = [];
         for (let i = 1; i <= 49; i++) {
-            images.push(`images/photo${i}.jpeg`);
+            images.push(`.\\images/photo${i}.jpeg`);
         }
         const pictures = document.getElementById("myPictures");
         let currentIndex = 0;
