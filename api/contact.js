@@ -24,9 +24,9 @@ export default async function handler(req, res) {
             text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage:\n${message}`,
         });
 
-        res.status(200).json({ success: "Email sent successfully!" });
+        res.status(200).send("Email sent successfully!");
 
     } catch (error) {
-        res.status(500).json({ error: "Failed to send email." });
+        res.status(500).send("Failed to send email.");
     }
 }
