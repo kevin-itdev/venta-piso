@@ -1,15 +1,27 @@
         const images = [];
         for (let i = 1; i <= 53; i++) {
-            images.push(`../images/Photo${i}.jpeg`);
+            images.push(`../images/Photo${i}.jpeg`);//   ../images/Photo1.jpeg for Vercel   ./images/Photo1.jpeg local
         }
         const pictures = document.getElementById("myPictures");
         let currentIndex = 0;
         let autoSlideInterval;
         // Dynamically add thumbnails
         images.forEach((src, index) => {
-            pictures.innerHTML += `
-                <img class="thumbnail" src="${src}" alt="Image ${index + 1}" onclick="changeImage(${index})">
-            `;
+            pictures.innerHTML += `<img class="thumbnail" src="${src}" alt="Image ${index + 1}" onclick="changeImage(${index})">`;
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+        
+            const formData = new FormData(this);
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                body: JSON.stringify(Object.fromEntries(formData)),
+                headers: { "Content-Type": "application/json" }
+            });
+        
+            const result = await response.text();
+            document.getElementById("status").textContent = result;
         });
 
         // Function to scroll thumbnails left or right

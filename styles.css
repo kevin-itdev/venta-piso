@@ -218,10 +218,14 @@ footer {
   padding-right: 1rem;
 }
 .pText { 
+  display: block; /* Ensures each paragraph appears on a new line */
+
   font-size: 1rem;
   text-align: left;
   padding-left: 1rem;
   padding-right: 1rem; 
+  line-height: 1.5; /* Improves readability */
+  margin-bottom: 0.5rem; /* Adds spacing between lines */
 }
 .pFooter {
   font-size: 1rem;
@@ -245,9 +249,9 @@ footer {
   cursor: pointer; 
 }
 .map {
-  background: linear-gradient(to bottom, lightgray, gray); /* Gradient for depth */ 
+  background: linear-gradient(to bottom, white,lightgray); /* Gradient for depth */ 
   cursor: pointer; 
-  border: 0.04rem solid darkslategray;
+  border: 0.04rem solid gray;
   padding: 0.625rem 1.25rem;
   border-radius: 0.5rem;
   margin-right: 1rem;
@@ -264,6 +268,10 @@ footer {
   transform: translateY(0.3rem); /* Moves down */
 }
 .app-img {
+  width: 2rem;
+  height: auto;
+}
+.map-img {
   width: 2rem;
   height: auto;
 }
