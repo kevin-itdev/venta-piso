@@ -23,19 +23,19 @@
             const result = await response.text();
             document.getElementById("status-left").textContent = result;
         });
-        document.getElementById("contact-form-center").addEventListener("submit", async function (event) {
-            event.preventDefault();
+        // document.getElementById("contact-form-center").addEventListener("submit", async function (event) {
+        //     event.preventDefault();
         
-            const formData = new FormData(this);
-            const response = await fetch("/api/contact", {
-                method: "POST",
-                body: JSON.stringify(Object.fromEntries(formData)),
-                headers: { "Content-Type": "application/json" }
-            });
+        //     const formData = new FormData(this);
+        //     const response = await fetch("/api/contact", {
+        //         method: "POST",
+        //         body: JSON.stringify(Object.fromEntries(formData)),
+        //         headers: { "Content-Type": "application/json" }
+        //     });
         
-            const result = await response.text();
-            document.getElementById("status-center").textContent = result;
-        });
+        //     const result = await response.text();
+        //     document.getElementById("status-center").textContent = result;
+        // });
 
         // Function to scroll thumbnails left or right
         function scrollThumbnails(amount) {
