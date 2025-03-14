@@ -21,7 +21,7 @@
             });
         
             const result = await response.text();
-            document.getElementById("status").textContent = result;
+            document.getElementById("status-right").textContent = result;
         });
         document.getElementById("contact-form-center").addEventListener("submit", async function (event) {
             event.preventDefault();
