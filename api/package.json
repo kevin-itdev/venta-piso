@@ -1,9 +1,0 @@
-{
-  "name": "api",
-  "version": "1.0.0",
-  "main": "contact.js",
-  "author": "Kevin Beltran Keena",
-  "dependencies": {
-    "nodemailer": "^6.10.0"
-  }
-}
