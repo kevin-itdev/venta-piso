@@ -10,7 +10,7 @@
             pictures.innerHTML += `<img class="thumbnail" src="${src}" alt="Image ${index + 1}" onclick="changeImage(${index})">`;
         });
 
-        document.getElementById("contact-form-left").addEventListener("submit", async function (event) {
+        document.getElementById("contact-form").addEventListener("submit", async function (event) {
             event.preventDefault();
         
             const formData = new FormData(this);
@@ -21,7 +21,7 @@
             });
         
             const result = await response.text();
-            document.getElementById("status-left").textContent = result;
+            document.getElementById("status").textContent = result;
         });
         // document.getElementById("contact-form-center").addEventListener("submit", async function (event) {
         //     event.preventDefault();
