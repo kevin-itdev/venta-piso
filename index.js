@@ -10,7 +10,7 @@
             pictures.innerHTML += `<img class="thumbnail" src="${src}" alt="Image ${index + 1}" onclick="changeImage(${index})">`;
         });
 // ---
-        document.getElementById("contact-form-left").addEventListener("submit", async function (event) {
+        document.getElementById("contact-form-right").addEventListener("submit", async function (event) {
             event.preventDefault();
         
             const formData = new FormData(this);
