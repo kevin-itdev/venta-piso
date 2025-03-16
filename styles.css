@@ -225,6 +225,7 @@ header {
   display: flex;
   justify-content: flex-end; /* Pushes content to the right */
   align-items: center; /* Aligns items vertically */
+  padding-right: 1rem;
   margin-bottom: 1.25rem;
   border-radius: 0.5rem;
 }
