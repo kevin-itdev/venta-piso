@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Piso en Venta, Santa Coloma de Gramenet Parking Incluido</title>
+	<link rel="stylesheet" href=".\styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+
+
+
+<body>
+	<header>     
+
+    <div class="header-container">
+
+      <div class="dropdown-menu">
+        <button class="dropdown-main">
+          <p class="pFlag-header">
+            Conecta&#9662;
+          </p>
+        </button>
+      
+        <div class="dropdown-content">
+          <a href="https://m.me/mary.keena1" target="_blank">
+            <p class="pFlag">
+              <img src=".\logo/messenger.webp" alt="Messenger" class="app-img"> Messenger
+            </p>
+          </a>
+      
+          <a href="https://wa.me/34609037853" target="_blank">
+            <p class="pFlag">
+              <img src=".\logo/whatsapp.webp" alt="Whatsapp" class="app-img"> Whatsapp
+            </p>
+          </a>
+
+          <a href="mailto:marykeena@hotmail.com" target="_blank">
+            <p class="pFlag">
+              <img src=".\logo/gmail.webp" alt="Mail" class="app-img"> Mail
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="dropdown-menu">
+        <button class="dropdown-main">
+          <p class="pFlag-header">
+            <img src=".\logo/spanish-flag.png" alt="Spanish Flag" class="app-img"> Español&#9662;
+          </p>
+        </button>
+      
+        <div class="dropdown-content">
+      
+          <a href=".\index-cat.html">
+            <p class="pFlag">
+              <img src=".\logo/catalan-flag.png" alt="Catalan Flag" class="app-img"> Català
+            </p>
+          </a>
+
+          <a href=".\index-en.html">
+            <p class="pFlag">
+              <img src=".\logo/uk-flag.jpg" alt="English Flag" class="app-img"> English
+            </p>
+          </a>
+        </div>
+      </div>
+
+    </div> 
+        
+ 	</header>
+  
+
+  <div class="main-container"> 
+
+	<div class="left-container"></div>	
+
+	<div class="center-container">	
+		<div class="text-container">	
+      <p class="pTitle">Piso en Venta en Singuerlín, Santa Coloma de Gramenet. Parking Incluido por €429,500.00</p>
+     
+      <div>
+        <a href="https://www.google.com/maps?q=41.459073, 2.208442" target="_blank">
+          <button class="map-btn"><img src=".\logo/map.png" alt="Map" class="map-img"></button>
+        </a> 
+        <p class="pText">Ver Mapa</p>
+      </div> 
+		</div>     
+	</div> 
+    
+    
+	<div class="right-container"> 
+		<p class="contact-heading"><b>Contacto</b></p>
+		<p class="contact-info">Si desea más información sobre esta propiedad, complete los datos a continuación.</p>
+	</div>
+
+  </div>
+  
+
+
+
+
+
+
+  <div class="main-container">     
+      
+		<div class="left-container"></div>	
+    
+      <div class="center-container">	
+        
+        <div class="slider-container">
+          <!-- Previous Button -->
+          <button class="prev" onclick="prevImage()">❮</button>
+  
+          <!-- Main Display Image   ../images/Photo1.jpeg for Vercel   ./images/Photo1.jpeg local  -->
+          <img id="mainImage" class="main-image" src="../images/Photo1.jpeg" alt="Main Image" onclick="openModal()">
+  
+          <!-- Next Button -->
+          <button class="next" onclick="nextImage()">❯</button>
+  
+          <!-- Thumbnail Images -->
+          <div class="thumbnail-container">
+            <!-- Left Scroll Button -->
+            <button class="scroll-btn left" onclick="scrollThumbnails(-100)">❮</button>
+            <!-- Thumbnails Wrapper -->
+            <div class="thumbnail-wrapper">
+                <div id="myPictures" class="thumbnails"></div>
+            </div>
+            <!-- Right Scroll Button -->
+            <button class="scroll-btn right" onclick="scrollThumbnails(100)">❯</button>
+          </div>
+      </div>
+  
+      <!-- Full-screen Modal -->
+      <div id="imageModal" class="modal" onclick="closeModal()">
+          <span class="modal-close">&times;</span>
+          <img id="modalImage">
+      </div>
+
+    </div>  
+		
+	<div class="right-container">
+      
+	      <form id="contact-form-right">
+	        <div class="form-group">
+	          <label for="name">Nombre</label>
+	          <input type="text" id="name" name="name" required>
+	        </div>
+	      
+	        <div class="form-group">
+	          <label for="phone">Teléfono</label>
+	          <input type="tel" id="phone" name="phone" required>
+	        </div>
+	      
+	        <div class="form-group">
+	          <label for="email">Email</label>
+	          <input type="email" id="email" name="email" required>
+	        </div>
+	      
+	        <div class="form-group">
+	          <label for="message">Comentario</label>
+	          <textarea id="message" name="message" required></textarea>
+	        </div>
+	      
+	        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+	      </form>
+	      <p id="status-right" style="text-align : center"></p></div>
+
+	</div>
+
+
+
+
+  <div class="main-container">           
+		<div class="left-container"></div>	 
+    <div class="center-container">	
+        <div class="text-container"><p class="pText"><b>Características principales:</b></p></div>
+        <div class="text-container"><p class="pText">- Distribución amplia y luminosa: Con tres vistas exteriores, esta casa disfruta de abundante luz natural</p></div>
+        <div class="text-container"><p class="pText">- Cuatro dormitorios: uno grande, uno mediano y dos pequeños</p></div>
+        <div class="text-container"><p class="pText">- Amplio salón-comedor: Un espacio independiente con acceso directo a la terraza delantera</p></div>
+        <div class="text-container"><p class="pText">- Cocina-comedor independiente: Amplio espacio para una mesa y sillas</p></div>
+        <div class="text-container"><p class="pText">- Dos baños: Un baño grande y un aseo</p></div>
+        <div class="text-container"><p class="pText">- Amplia terraza trasera: Incluye un práctico lavadero cerrado</p></div>
+        <div class="text-container"><p class="pText">- Equipada con puerta de seguridad, persianas motorizadas y calefacción de gas natural, esta casa se encuentra en excelentes condiciones y lista para entrar a vivir</p></div>
+        <div class="text-container"><p class="pText">- Aparcamiento privado: Espacio para un coche grande</p></div>    
+        <div class="text-container><p class="pText"></p></div>
+      </div>
+    </div>  		
+		<div class="right-container"></div>
+	</div>  
+
+
+
+
+
+	<div class="main-container">
+		<div class="left-container"></div>    
+		<div class="center-container">
+      <iframe 
+      loading="lazy" 
+      allowfullscreen 
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/d/u/0/embed?mid=1dbdqV6_XoBVSw4xaBQMLiFJPK52Kw-c&ehbc=2E312F&noprof=1">
+      </iframe>
+		</div>
+		<div class="right-container"></div>
+	</div>
+
+
+	
+
+  <div class="main-container">           
+		<div class="left-container"></div>	 
+    <div class="center-container">	
+        <div class="text-container"><p class="pText"><b>Amplio apartamento con terrazas y aparcamiento junto al Parque Europa</b></p></div>
+        <div class="text-container"><p class="pText">Una hermosa vivienda que combina a la perfección espacio, comodidad y practicidad.
+            Con 4 dormitorios, 2 baños, amplias terrazas y aparcamiento privado, esta propiedad ofrece todo lo necesario en una ubicación privilegiada junto al Parque Europa y la Avenida Pallaresa.</p></div>
+        <div class="text-container"><p class="pText"></p></div>
+        <div class="text-container"><p class="pText">Ubicado en la Avenida Ramón Berenguer, este apartamento de 100 m² (según el registro del terreno) en primera planta cuenta con dos magníficas terrazas: la delantera de 27 m² y la trasera de 60 m², que ofrecen amplios espacios exteriores.</p></div>
+        <div class="text-container"><p class="pText"></p></div>
+        <div class="text-container"><p class="pText">Situado en un tranquilo y bien cuidado edificio del año 1992 con ladrillo expuesto y un total de cinco apartamentos, esta casa combina comodidad y tranquilidad.</p></div>
+        <div class="text-container"><p class="pText"></p></div>
+        <div class="text-container"><p class="pText">*El precio no incluye impuestos, gastos de notaría, registro ni otros gastos asociados.*</p></div>
+        <div class="text-container"><p class="pText"></p></div>
+      </div>
+    </div>  		
+		<div class="right-container"></div>
+	</div> 
+
+
+  <div class="main-container">           
+		<div class="left-container"></div>	 
+    <div class="center-container">	
+	    
+      <div class="display-website">	
+        <p class="contact-heading"><b>Contacto</b></p>
+        <p class="contact-info">Si desea más información sobre esta propiedad, complete los datos a continuación.</p>
+        <form id="contact-form-center">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="message">Comentario</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+        
+          <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+        <p id="status-center" style="text-align : center"></p></div>
+      </div>
+
+    </div>  		
+    <div class="right-container"></div>
+  </div> 
+
+
+  <div class="main-container">
+		<div class="left-container"></div>    
+		<div class="center-container">
+      <a href="https://www.upwork.com/freelancers/~01d54a2fa17692de80" target="_blank">
+        <img src=".\logo/upwork.png"  alt="https://www.upwork.com/freelancers/~01d54a2fa17692de80" class="upwork-logo">
+      </a>       
+		</div>
+		<div class="right-container"></div>
+	</div>
+
+
+
+
+  <script src=".\index.js"></script>
+	
+</body>
+
+<footer>
+
+  <div class="main-container">
+    <div class="left-container"></div>	 
+    <div class="center-container">
+      <p class="pFooter">✉️ <a style="color: white" href="mailto:marykeena@hotmail.com" target="_blank">marykeena@hotmail.com</a></p>
+      <p class="pFooter">&#128222; +34 609 037 853</p>  
+      <p class="pFooter">Gracias por su visita! &copy;2025</p>  
+    </div>  
+    <div class="right-container"></div>
+  </div> 
+  
+</footer>
+
+
+
+
+  
+
+</html>
