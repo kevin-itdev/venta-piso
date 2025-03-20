@@ -394,11 +394,17 @@ h2 {
 .left-container { width: 10%; text-align: left; }
 .right-container { width: 30%; text-align: left; }
 
-.text-container { 
+.text-container-header { 
   width: 100%;
   background-color: white;
   display: flex;
   align-items: center; 
+}
+.text-container { 
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: left; 
 }
 .display-website{
 text-align: left;
