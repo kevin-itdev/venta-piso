@@ -319,8 +319,7 @@ h2 {
 }
 .pFlag { 
   font-size: 1rem;
-  text-align: left;
-  padding-left: 1rem;
+  text-align:center;
   color:black;
 }
 .pFlag-header-website, .pFlag-header-phone { 
@@ -367,8 +366,8 @@ h2 {
   background-color: #f9f9f9;
   cursor: pointer;
   z-index: 1;
-  border: 0.188rem solid hsl(0, 11%, 91%);
-  min-width: 10rem;
+  border: 0.2rem solid hsl(0, 11%, 91%);
+  min-width: 8rem;
   border-radius: 0.625rem;
 }
 
