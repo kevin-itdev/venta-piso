@@ -5,15 +5,8 @@
 
 
 
-#contact-form-right {
-  max-width: 100%; 
-  margin-left: 1.25rem;
-  padding: 1.25rem;
-  background: #f9f9f9;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
-}
-#contact-form-center {
+
+#contact-form {
   max-width: 100%; 
   padding: 1.25rem;
   background: #f9f9f9;
@@ -52,14 +45,13 @@ textarea {
   background: #0056b3;
 }
 .contact-heading {
-  margin-left: 1.25rem;
+  margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
 }
 .contact-info {
-  margin-left: 1.25rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
   font-size: 1rem;
 }
 
@@ -281,11 +273,14 @@ h2 {
   font-size: 1rem;
   text-align: left; 
 }
-.upwork-logo {
+.upwork-logo-center {
   width: 100%;
   height: auto;
 }
-
+.upwork-logo-right {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /*Contact apps*/
@@ -297,7 +292,7 @@ h2 {
 .map-btn {
   background: linear-gradient(to bottom, white,lightgray); /* Gradient for depth */ 
   cursor: pointer; 
-  border: 0.04rem solid gray;
+  border: 0.08rem solid gray;
   margin-top: 1rem;
   margin-left:1rem;
   padding: 0.625rem 1.25rem;
@@ -305,7 +300,6 @@ h2 {
   margin-right: 1rem;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0.5rem 0.5rem #999;
-  /* box-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,0.3);  */
 }
 .map-btn:hover { 
   box-shadow: 0.125rem 1rem 1rem rgba(0,0,0,0.3); 
@@ -390,9 +384,11 @@ h2 {
   height: 100%;
   min-height: 25rem;
   border-radius: 0.625rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 .left-container { width: 10%; text-align: left; }
-.right-container { width: 30%; text-align: left; }
+.right-container { width: 30%; text-align: left; margin-left: 1.25rem; }
 
 .text-container-header { 
   width: 100%;
@@ -401,11 +397,10 @@ h2 {
   align-items: center; 
 }
 .text-container {
-  padding-top:0.1rem;
+  padding-top:0.1rem; 
   padding-bottom:0.5rem; 
   width: 100%;
   background-color: white;
-  /* display: flex; */
   align-items: center; 
 }
 .display-website{
@@ -465,8 +460,6 @@ text-align: left;
 
 @media screen and (min-device-width: 900px) and (min-width: 900px) {
   .display-website { display: none; }
-  .contact-heading { margin-left: 2.25rem; }
-  .contact-info { margin-left: 2.25rem; }
   .general-table-container { display: flex;  } 
 }
 
