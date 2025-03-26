@@ -327,9 +327,12 @@ h2 {
   font-size: 1rem;
   text-align: left;
   padding-left: 1rem;
-  color:black;
   color:white; 
 }
+.pFlag-header-phone { 
+  padding-left: 0rem;
+}
+
 
 /*Language dropdown menu*/
 .dropdown-menu {
@@ -477,10 +480,10 @@ text-align: left;
 }
 
 
-
 /* @media screen and (max-device-width: 600px) and (max-width: 600px) { 
   .pFlag-header-website { display: none; } 
 }
 @media screen and (min-device-width: 600px) and (min-width: 600px) {
   .pFlag-header-phone { display: none; }
 } */
+
