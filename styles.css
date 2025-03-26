@@ -317,13 +317,19 @@ h2 {
   width: 2rem;
   height: auto;
 }
-.pFlag-header, .pFlag { 
+.pFlag { 
   font-size: 1rem;
   text-align: left;
   padding-left: 1rem;
   color:black;
 }
-.pFlag-header { color:white; }
+.pFlag-header-website, .pFlag-header-phone { 
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 1rem;
+  color:black;
+  color:white; 
+}
 
 /*Language dropdown menu*/
 .dropdown-menu {
@@ -331,9 +337,15 @@ h2 {
   display: inline-block;
 }
 
-.dropdown-menu:hover .pFlag-header {
+.dropdown-menu:hover .pFlag-header-website {
   color: #e7d01f;
 }
+.dropdown-menu:hover .pFlag-header-phone {
+  color: #e7d01f;
+}
+
+
+
 
 .dropdown-main {
   background-color: inherit;
@@ -444,23 +456,31 @@ text-align: left;
 }
 
 
-@media screen and (max-width: 900px) {
 
-  .pTitle {  margin-top: 1rem; font-size: 1.4rem; }
-  .left-container, .right-container { display: none; }
-  .center-container { width: 100%; }
-  footer{ padding: 1rem; }
-}
 
-@media screen and (max-device-width: 900px) {   
+
+@media screen and ((max-device-width: 900px) or (max-width: 900px)) { 
+
+  .pFlag-header-website { display: none; } 
   .left-container, .right-container { display: none; } 
   .center-container { width: 100%; }
   footer{ padding: 1rem; }
 }
 
-@media screen and (min-device-width: 900px) and (min-width: 900px) {
+
+
+@media screen and ((min-device-width: 900px) and (min-width: 900px)) {
+
+  .pFlag-header-phone { display: none; }
   .display-website { display: none; }
   .general-table-container { display: flex;  } 
 }
 
 
+
+/* @media screen and (max-device-width: 600px) and (max-width: 600px) { 
+  .pFlag-header-website { display: none; } 
+}
+@media screen and (min-device-width: 600px) and (min-width: 600px) {
+  .pFlag-header-phone { display: none; }
+} */
